@@ -51,6 +51,8 @@ from .schedulers import SchedulersCallback, SchedulersInput
 from .sparsity import SparsityCallback, LogSparsity
 
 # Optional Callbacks
+from .inference import Inference
+from .dumpprobs import DumpProbs
 from .compression import WeightCompression
 from .flags import (
     GlobalFlags,
@@ -115,6 +117,8 @@ __all__ = [
     "SchedulersCallback",
     "SparsityCallback",
     # Add-on Callbacks
+    "Inference",
+    "DumpProbs",
     "Lora",
     "LogInputSummaries",
     "LogOptimizerParamGroup",
